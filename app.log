@@ -1,0 +1,64 @@
+2024-05-08T23:44:05 - INFO - <module> - El servidor esta listo en [::]:2026
+2024-05-08T23:49:32 - ERROR - _call_behavior - Exception calling application: cannot access local variable 'costo_final' where it is not associated with a value
+Traceback (most recent call last):
+  File "/Users/dylanjitton/anaconda3/lib/python3.11/site-packages/grpc/_server.py", line 555, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dylanjitton/Documents/sistemas distribuidos/parcial Final/Lab 3 server side/server.py", line 40, in calcularCosto
+    costo_total=costo_total(request.tipoServicio)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dylanjitton/Documents/sistemas distribuidos/parcial Final/Lab 3 server side/server.py", line 24, in costo_total
+    return costo_final
+           ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'costo_final' where it is not associated with a value
+2024-05-09T14:40:06 - INFO - <module> - El servidor esta listo en [::]:2026
+2024-05-09T14:40:20 - ERROR - _call_behavior - Exception calling application: cannot access local variable 'costo_final' where it is not associated with a value
+Traceback (most recent call last):
+  File "/Users/dylanjitton/anaconda3/lib/python3.11/site-packages/grpc/_server.py", line 555, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dylanjitton/Documents/sistemas distribuidos/parcial Final/Lab 3 server side/server.py", line 40, in calcularCosto
+    costo_total=costo_total(request.tipoServicio)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dylanjitton/Documents/sistemas distribuidos/parcial Final/Lab 3 server side/server.py", line 24, in costo_total
+    return costo_final
+           ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'costo_final' where it is not associated with a value
+2024-05-09T14:42:09 - INFO - <module> - El servidor esta listo en [::]:2026
+2024-05-09T14:42:30 - INFO - <module> - El servidor esta listo en [::]:2026
+2024-05-09T14:42:38 - ERROR - _call_behavior - Exception calling application: cannot access local variable 'costo_final' where it is not associated with a value
+Traceback (most recent call last):
+  File "/Users/dylanjitton/anaconda3/lib/python3.11/site-packages/grpc/_server.py", line 555, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dylanjitton/Documents/sistemas distribuidos/parcial Final/Lab 3 server side/server.py", line 35, in calcularCosto
+    costo_final=costo_total(request.tipoServicio)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dylanjitton/Documents/sistemas distribuidos/parcial Final/Lab 3 server side/server.py", line 24, in costo_total
+    return costo_final
+           ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'costo_final' where it is not associated with a value
+2024-05-09T14:43:53 - INFO - <module> - El servidor esta listo en [::]:2026
+2024-05-09T14:44:01 - ERROR - _call_behavior - Exception calling application: 'UUID' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "/Users/dylanjitton/anaconda3/lib/python3.11/site-packages/grpc/_server.py", line 555, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dylanjitton/Documents/sistemas distribuidos/parcial Final/Lab 3 server side/server.py", line 40, in calcularCosto
+    respuesta = pb.detalles_solic(
+                ^^^^^^^^^^^^^^^^^^
+TypeError: 'UUID' object cannot be interpreted as an integer
+2024-05-09T14:45:30 - INFO - <module> - El servidor esta listo en [::]:2026
+2024-05-09T14:45:34 - ERROR - _call_behavior - Exception calling application: Value out of range: 275731680562144326901250933652756242230
+Traceback (most recent call last):
+  File "/Users/dylanjitton/anaconda3/lib/python3.11/site-packages/grpc/_server.py", line 555, in _call_behavior
+    response_or_iterator = behavior(argument, context)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dylanjitton/Documents/sistemas distribuidos/parcial Final/Lab 3 server side/server.py", line 40, in calcularCosto
+    respuesta = pb.detalles_solic(
+                ^^^^^^^^^^^^^^^^^^
+ValueError: Value out of range: 275731680562144326901250933652756242230
+2024-05-09T14:48:06 - INFO - <module> - El servidor esta listo en [::]:2026
+2024-05-09T14:48:41 - INFO - <module> - El servidor esta listo en [::]:2026
+2024-05-09T14:51:54 - INFO - <module> - El servidor esta listo en [::]:2026
+2024-05-09T14:52:19 - INFO - <module> - El servidor esta listo en [::]:2026

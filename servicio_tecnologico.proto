@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+enum TipoServicio{
+  NORMAL=0;
+  EXPRESS=1;
+  NEXT_DAY=2;
+}
+
+message solic_usuario{
+  int32 id =1;
+  string nombre=2;
+  int32 numero_cliente=3;
+  TipoServicio tipoServicio=4;
+}
+
+message detalles_solic{
+  int32 id_servicio=1;
+  double costo_total=2;
+}
+
+service respuesta_solic{
+  rpc calcularCosto(solic_usuario) returns (detalles_solic);
+}
